@@ -558,7 +558,7 @@ async function sendAI(){
   aiHistory.push({role:'user',content:msg});
   const loading=addMsg('ai','Pensando...',true);
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{
+    const res=await fetch('https://gentle-queen-a8fb.joao-vitor-e08.workers.dev',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
